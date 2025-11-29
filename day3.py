@@ -10,6 +10,13 @@ class Expense:
         self.category = category
 
 
+def addExpense(day):
+    new = input("Input expense: ")
+    new = input("Input price: ")
+    new = input("Input category: ")
+    new = input("Input : ")
+
+
 e1 = Expense(29, "kaffe", 45, "mat")
 
 print(e1.date)
