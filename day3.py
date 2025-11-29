@@ -1,16 +1,16 @@
 # Build a simple budget tracker that categorizes expenses and generates monthly summaries.
 # Allow users to add transactions and view spending by category.
 
-import csv
 
-def collectExpenses(day):
-    thing = input("what thing have you bouth? ")
-    price = input("what price was it? ")
-    category = input("waht category would you like to place it in? ")
-    day = day 
-    with open('expenses.csv', 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.
+class Expense:
+    def __init__(self, date, item, price, category):
+        self.date = date
+        self.item = item
+        self.price = price
+        self.category = category
 
-for days in range(1,31):
-    collectExpenses(day)
+
+e1 = Expense(29, "kaffe", 45, "mat")
+
+print(e1.date)
+print(e1.category)
