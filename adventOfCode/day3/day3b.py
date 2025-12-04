@@ -1,6 +1,6 @@
 def mStrip(line):
     nums = list(map(int, str(line.strip())))
-    while True:
+   while True:
         print("")
         print("")
         for i, num in enumerate(nums):
