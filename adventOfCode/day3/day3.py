@@ -15,7 +15,7 @@ def maxJolt(num):
         return firstDig * 10 + lastDig
     else:
         firstDig = biggest
-        del digits[: pos + 1]
+        del digits[pos:]
         digits.insert(0, 0)
         print(f"leftover digs {digits}")
         lastDig = max(digits)
@@ -24,7 +24,7 @@ def maxJolt(num):
 
 def main():
     sum = 0
-    with open("test", "r") as file:
+    with open("input", "r") as file:
         for line in file:
             print(f"{line.strip()}")
             num = maxJolt(line.strip())
