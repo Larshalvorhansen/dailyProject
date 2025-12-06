@@ -1,0 +1,47 @@
+# import numpy as np
+
+
+def getData():
+    data = []
+    with open("exampleinput", "r") as file:
+        for i, line in enumerate(file):
+            if i == 4:
+                line = "test"
+            else:
+                line = [line.strip().split(" ")]
+            l = line[0]
+            print(l)
+            l.remove("")
+            print(l)
+            data.append(line)
+
+    return data
+
+
+def main():
+    sum = 0
+    data = getData()
+
+    print(data)
+    print(f"sum {sum}")
+
+
+if __name__ == "__main__":
+    main()
+    print("Done")
+
+"""
+Sudocode
+
+make array of input
+transpose array
+for line in array:
+    get final element (* or +)
+        if *:
+            multiply all elements
+            add to sum
+        if +:
+            add all elements
+            add to sum
+print(sum)
+"""
