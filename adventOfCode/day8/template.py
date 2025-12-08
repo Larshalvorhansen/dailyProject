@@ -2,7 +2,7 @@ def getData():
     data = []
     with open("input", "r") as file:
         for line in file:
-            line = [int(line.strip().split("-")[0]), int(line.strip().split("-")[1])]
+            line = line.strip()
             data.append(line)
 
     return data
@@ -12,6 +12,7 @@ def main():
     sum = 0
     data = getData()
 
+    print(f"Data: \n{data}")
     print(sum)
 
 
